@@ -1,0 +1,12 @@
+<button class="button button-block button-positive" ng-click="vm.updateGeolocation()">
+  Update position
+</button>
+
+<h1 ng-show="vm.loading">
+  Loading...
+</h1>
+
+<div ng-hide="vm.loading">
+  <h1>Lat: {{ vm.currentPosition.latitude }}</h1>
+  <h1>Lng: {{ vm.currentPosition.longitude }}</h1>
+</div>
